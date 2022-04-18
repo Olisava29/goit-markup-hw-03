@@ -9,6 +9,21 @@ body {
     --main-team: #757575;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+   margin: 0;
+   padding-left: 0; 
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -17,19 +32,34 @@ body {
     text-decoration: none;
 }
 
+
+.conteiner {
+  width: 1200px;  
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /*outline: 1px solid red;*/
+}
+
 /*Шапка сторінки*/
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .header-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-basic-color) ;
+    color: var(--second-basic-color);
 }
 
 .header-item:hover,
 .header-item:focus {
     color: #2196F3;
 }
+
 
 .header-logo {
     font-family: 'Raleway';
@@ -38,6 +68,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
+
 }
 
 .header-logo-second {
@@ -46,22 +77,51 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;;
+    color: #000000;
+    margin-right: 93px;
 }
 
-.header-telephone-gmail {
+.page-header .conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-roster:not(:last-child ){
+    margin-right: 50px;
+} 
+
+.header-list-second {
+    display: flex;
+    margin-right: auto;
+    margin-left: 331px;
+}  
+
+.header-gmail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-team);
-    
+    margin-right: 50px;  
+}
+
+.header-telephone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-team);  
 }
 
 /*Унікальний контент*/
 
 .section-one {
-    background: #2F303A; 
+    background: #2F303A;
+    text-align: center;
 }
 
 .side-title {
@@ -71,24 +131,41 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-basic-color);
+    margin-bottom: 40px;
+
 }
 
 .button-type {
-    border-radius: 4px;
     background: #2196F3;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.85;
     display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px; 
 }
+
 
 .button-type:hover,
 .button-type:focus {
     cursor: pointer;
     color: #FFFFFF;
+}
+
+.main-item {
+   padding-bottom: 94px;
+   padding-top: 94px;
+   flex-basis: calc((100% - 120px)/ 4);
+   margin-right: 30px;
+} 
+
+.main-list {
+    display: flex;
+    margin-right: -30px;
+
 }
 
 .main-heading {
@@ -98,6 +175,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-basic-color);
+    margin-bottom: 10px;
 } 
 
 .main-paragraph {
@@ -107,6 +185,20 @@ body {
     color: var(--main-team);
 } 
 
+.about-us {
+    padding-bottom: 94px;
+}
+
+.about-us-list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.about-us-item { 
+    flex-basis: calc((100% - 90px)/ 3);
+    margin-right: 30px;
+}
+
 .about-us-heading {
     font-weight: 700;
     font-size: 36px;
@@ -114,13 +206,34 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-basic-color);
+    margin-bottom: 50px;
 }
 
 /*Наша команда*/
 
+.team-img {
+    margin-bottom: 30px;
+}
+
 .our-team {
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+.team-list {
+    display: flex;
+    margin-right: -30px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 120px)/ 4);
+    margin-right: 30px;
+}
+
+/*.team-item:not(:last-child) {
+    margin-right: 30px;
+}*/
 
 .team-title {
     font-weight: 700;
@@ -128,7 +241,8 @@ body {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-basic-color);  
+    color: var(--second-basic-color); 
+    margin-bottom: 50px; 
 }
 
 .team-heading {
@@ -138,6 +252,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-basic-color);
+    margin-bottom: 10px;
 }
 
 .team-paragraph {
@@ -152,6 +267,8 @@ body {
 
 .footer-page {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -161,6 +278,8 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .footer-logo-second {
@@ -178,14 +297,44 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--first-basic-color);
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
-.footer-gmail-phone {
+.footer-gmail {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+.footer-phone {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*Портфоліо*/
+
+.porfolio-section-one {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-list{
+    display: flex;
+    justify-content: center;
+    margin-right: -8px;
+}
+
+.button-portfolio {
+    flex-basis: calc((100% - 40px)/ 5);
+    margin-right: 8px;
 }
 
 .button-portfolio {
@@ -196,7 +345,10 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    cursor: pointer
+    cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+    margin-bottom: 50px;
 }  
 
 .button-portfolio:hover,
@@ -205,12 +357,33 @@ body {
     background-color: #2196F3;
 }  
 
+.portfolio-schedule {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+} 
+
+.portfolio-item {
+    display: inline-block;
+    width: 370px;
+    flex-basis: calc((100% - 90px)/ 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-image {
+    margin-bottom: 20px;
+}
+
 .portfolio-heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-basic-color);
+    margin: 0px 24px 4px 24px;
 } 
 
 .portfolio-paragraph {
@@ -218,4 +391,14 @@ body {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--main-team);
-    } 
+    margin: 0px 24px 20px 24px;
+} 
+
+.border-header {
+    border: 1px solid #ECECEC;
+} 
+
+/*.border-img {
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+}*/
