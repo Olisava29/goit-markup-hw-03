@@ -121,14 +121,9 @@ img {
 
 .section-one {
     background: #2F303A;
-    text-align: center;  
-    padding: 200px 452px 280px 452px;
-    width: 1600px;
-}
-
-.section-hero {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 
 .side-title {
@@ -138,9 +133,17 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--first-basic-color);
+    max-width: 696px;
     margin-bottom: 40px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.section-hero {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
 
 .button-type {
     background: #2196F3;
@@ -234,6 +237,7 @@ img {
 .team-item {
     flex-basis: calc((100% - 120px)/ 4);
     margin-right: 30px;
+    padding-bottom: 30px;
 }
 
 /*.team-item:not(:last-child) {
@@ -247,7 +251,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-basic-color); 
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
 }
 
 .team-heading {
@@ -265,8 +269,7 @@ img {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-team);  
-    padding-bottom: 30px; 
+    color: var(--main-team); 
 }
 
 /*Підвал сторінки*/
@@ -406,7 +409,7 @@ img {
 } 
 
 .border-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 } 
 
 /*.border-img {
